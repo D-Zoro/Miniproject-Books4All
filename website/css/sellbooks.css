@@ -1,0 +1,120 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html take up full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Gradient background for the whole page */
+body {
+    background: linear-gradient(to bottom, #2b2b2b, #484848); /* Gradient from darker grey to lighter grey */
+    overflow: auto; /* Allow scrolling */
+}
+#container-text-center{
+    display: flex;
+justify-content: space-evenly;
+}
+
+/* Center the sell section in the viewport */
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Sell section styles */
+.sell-section {
+    background-color: #1abc9c; /* Primary color */
+    color: #fff; /* White text color */
+    border: 1px solid rgba(44, 62, 80, 0.3); /* Light secondary color border */
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.6); /* White shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Padding for the content inside the modal */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width for the box */
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Navbar styling */
+header {
+    background-color: transparent;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Customize button styles */
+.custom-btn {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    border: none;
+    color: #fff; /* White text color */
+}
+
+.custom-btn:hover {
+    background-color: rgb(30, 50, 65); /* Slightly darker secondary color */
+}
+
+/* Add spacing around the form */
+.form-label, .form-control, .form-floating {
+    margin-bottom: 1rem;
+}
+
+/* Adjust input styles */
+.form-control {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    color: #fff; /* White text color */
+    border: 1px solid rgba(26, 188, 156, 0.3); /* Light primary color border */
+}
+
+.form-control::placeholder {
+    color: #ddd; /* Light placeholder text */
+}
+
+/* Adjust header and text styles */
+.modal-header h1 {
+    color: #fff; /* White text color */
+}
+
+.modal-body small {
+    color: #f5f5dc; /* Cream color */
+}
+
+.text-body-secondary a {
+    color: #f5f5dc; /* Cream color link */
+}
+
+/* Styles for the sell form within the box */
+form {
+    margin-top: 2rem;
+}
+
+/* Customize button within the form */
+button[type="submit"] {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(30, 50, 65); /* Slightly darker secondary color */
+}
+
+

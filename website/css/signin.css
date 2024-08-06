@@ -1,0 +1,89 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html take up full height */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Gradient background for the whole page */
+body {
+    background: linear-gradient(to bottom, #1a1a1a, #333333); /* Gradient from darker grey to lighter grey */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Center the modal content in the viewport */
+.modal-sheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the modal content to look like a traditional box */
+.modal-content {
+    background-color: rgb(26, 188, 156); /* Primary color */
+    color: #fff; /* White text color */
+    border: 1px solid rgba(44, 62, 80, 0.3); /* Light secondary color border */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5); /* White shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Padding for the content inside the modal */
+    width: 400px; /* Fixed width */
+    height: auto; /* Adjust height based on content */
+}
+
+/* Customize button styles */
+.custom-btn {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    border: none;
+    color: #fff; /* White text color */
+}
+
+.custom-btn:hover {
+    background-color: rgb(30, 50, 65); /* Slightly darker secondary color */
+}
+
+/* Add spacing around the form */
+.form-label, .form-control, .form-floating {
+    margin-bottom: 1rem;
+}
+
+/* Adjust input styles */
+.form-control {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    color: #fff; /* White text color */
+    border: 1px solid rgba(26, 188, 156, 0.3); /* Light primary color border */
+}
+
+.form-control::placeholder {
+    color: #ddd; /* Light placeholder text */
+}
+
+/* Styling for the button within the form */
+.btn-primary {
+    background-color: rgb(44, 62, 80); /* Secondary color */
+    color: #fff; /* White text color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(30, 50, 65); /* Slightly darker secondary color */
+}
+
+/* Adjust header and text styles */
+.modal-header h1 {
+    color: #fff; /* White text color */
+}
+
+.modal-body small {
+    color: #f5f5dc; /* Cream color */
+}
